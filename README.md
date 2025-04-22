@@ -1,0 +1,1 @@
+Detalhes arquivo readme
