@@ -39,7 +39,7 @@ const dados = {
         "autor": "Carlos Tanaka",
         "destaque": false,
         "data": "2025-04-03",
-        "imagem_principal": "assets/toquio.jpeg",
+        "imagem_principal": "assets/tokyo.jpg",
         "imagens_complementares": [
           { "id": 1, "src": "assets/toquio1.jpg", "descricao": "Cruzamento de Shibuya" },
           { "id": 2, "src": "assets/toquio2.jpg", "descricao": "Templo Senso-ji" }
@@ -62,7 +62,7 @@ const dados = {
         </div>
       `;
       item.addEventListener('click', () => {
-        window.location.href = `detalhes.html?id=${destino.id}`;
+        window.location.href = `detalhes1.html?id=${destino.id}`;
       });
       carouselInner.appendChild(item);
     });
@@ -83,7 +83,7 @@ const dados = {
         </div>
       `;
       col.querySelector(".card").addEventListener("click", () => {
-        window.location.href = `detalhes.html?id=${destino.id}`;
+        window.location.href = `detalhes1.html?id=${destino.id}`;
       });
       container.appendChild(col);
     });
