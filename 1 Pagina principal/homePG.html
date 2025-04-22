@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Locais Turísticos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estiloHomePG.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container d-flex flex-column align-items-center">
+            <img src="assets/Logo.png" width="80px" alt="Logo">
+            <h1>Guia de Locais Turísticos</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#destinos">Destinos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Banner -->
+        <section class="hero">
+            <h2>Descubra os Melhores Destinos pelo Mundo!</h2>
+        </section>
+
+        <!-- Carrossel de Destaques -->
+        <section class="container my-5">
+            <h2 class="text-center mb-4">Destinos em Destaque</h2>
+            <div id="carouselDestinos" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="carousel-inner">
+                    <!-- Slides gerados via JS -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestinos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselDestinos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Cards de Destinos -->
+        <section class="container my-5" id="destinos">
+            <h2 class="text-center mb-4">Todos os Destinos</h2>
+            <div class="row" id="cards-destinos">
+                <!-- Cards gerados via JS -->
+            </div>
+        </section>
+
+        <!-- Sobre o Aluno -->
+        <section class="container my-5" id="sobre">
+            <h2 class="text-center mb-4">Sobre o Desenvolvedor</h2>
+            <p class="text-center">Site criado por [Seu Nome Aqui], estudante de [Seu Curso] na [Sua Instituição].</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Guia de Turismo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
