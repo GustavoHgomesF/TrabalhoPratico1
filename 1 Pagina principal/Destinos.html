@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinos Turísticos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0%;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    nav {
+  background-color: #008CBA;
+  height: 80px;
+  min-height: 80px;
+  display: flex;
+  align-items: center; /* Alinha verticalmente os itens */
+}
+
+/* Ajusta o tamanho da logo */
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+}
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/Logo.jpg" width="80"  class="me-2"> 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Destinos.html">Destinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Sobre.html">Sobre</a>
+            </li>
+          </ul>
+        <form class="d-flex ms-lg-3 mt-2 mt-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <main class="container my-5 flex-grow-1">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <!-- Gerados com base em locais turísticos diferentes -->
+      <!-- Exemplos de nomes genéricos e imagens -->
+      <!-- Substituir imagens com URLs reais se desejar -->
+
+      <!-- Repetição de blocos -->
+      <!-- Abaixo estão apenas 5 como exemplo -->
+      <!-- Substituir com os 20 locais desejados -->
+      <script>
+        const destinos = [
+          "Petra",
+          "Grande Muralha da China",
+          "Chichén Itzá",
+          "Coliseu de Roma",
+          "Monte Fuji",
+          "Taj Mahal",
+          "Stonehenge",
+          "Palácio de Versalhes",
+          "Templo de Luxor",
+          "Monte Kilimanjaro",
+          "Cataratas do Iguaçu",
+          "Ilhas Maldivas",
+          "Parque Yellowstone",
+          "Angkor Wat",
+          "Castelo de Neuschwanstein",
+          "Parque Banff",
+          "Ayers Rock (Uluru)",
+          "Templo Kiyomizu-dera",
+          "Bora Bora",
+          "Plitvice Lakes"
+        ];
+
+        const container = document.currentScript.parentElement;
+        destinos.forEach(destino => {
+          const col = document.createElement('div');
+          col.className = 'col';
+
+          const card = document.createElement('div');
+          card.className = 'card h-100 shadow-sm';
+          card.innerHTML = `
+            <img src="https://via.placeholder.com/400x200?text=${encodeURIComponent(destino)}" class="card-img-top" alt="${destino}">
+            <div class="card-body">
+              <h5 class="card-title">${destino}</h5>
+              <p class="card-text">Explore o famoso destino de ${destino}, repleto de belezas e histórias fascinantes.</p>
+            </div>
+          `;
+
+          col.appendChild(card);
+          container.appendChild(col);
+        });
+      </script>
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer"style=" bottom: 0; left: 0; width: 100%; height: 100px; background-color: #343a40; color: white; display: flex; align-items: center; justify-content: center; z-index: 9999;">
+    <p>&copy; 2025 Turismo e viagens, seu Guia de Turismo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,96 +1,122 @@
 const dados = {
-    "destinos": [
-      {
-        "id": 1,
-        "nome": "Paris, França",
-        "descricao": "A cidade do amor e da luz.",
-        "conteudo": "Paris é famosa por seus monumentos históricos, gastronomia refinada e atmosfera romântica. Entre os pontos mais icônicos estão a Torre Eiffel, o Museu do Louvre e a Catedral de Notre-Dame.",
-        "categoria": "História e Cultura",
-        "autor": "João Silva",
-        "destaque": true,
-        "data": "2025-04-01",
-        "imagem_principal": "assets/TorreEiffel.jpeg",
-        "imagens_complementares": [
-          { "id": 1, "src": "assets/paris1.jpg", "descricao": "Vista da Torre Eiffel ao entardecer" },
-          { "id": 2, "src": "assets/paris2.jpg", "descricao": "Passeio pelo Rio Sena" }
-        ]
-      },
-      {
-        "id": 2,
-        "nome": "Roma, Itália",
-        "descricao": "História e cultura em cada esquina.",
-        "conteudo": "Roma é um verdadeiro museu a céu aberto, com ruínas antigas como o Coliseu, o Fórum Romano e o Pantheon, além da Cidade do Vaticano com a Basílica de São Pedro.",
-        "categoria": "História Antiga",
-        "autor": "Maria Oliveira",
-        "destaque": true,
-        "data": "2025-04-02",
-        "imagem_principal": "assets/Roma.jpeg",
-        "imagens_complementares": [
-          { "id": 1, "src": "assets/roma1.jpg", "descricao": "Coliseu de Roma ao pôr do sol" },
-          { "id": 2, "src": "assets/roma2.jpg", "descricao": "Fontana di Trevi" }
-        ]
-      },
-      {
-        "id": 3,
-        "nome": "Tóquio, Japão",
-        "descricao": "Modernidade e tradição lado a lado.",
-        "conteudo": "Tóquio mistura tecnologia de ponta com tradições seculares, oferecendo desde templos milenares até arranha-céus futuristas. É um dos centros urbanos mais vibrantes do mundo.",
-        "categoria": "Tecnologia e Cultura",
-        "autor": "Carlos Tanaka",
-        "destaque": false,
-        "data": "2025-04-03",
-        "imagem_principal": "assets/tokyo.jpg",
-        "imagens_complementares": [
-          { "id": 1, "src": "assets/toquio1.jpg", "descricao": "Cruzamento de Shibuya" },
-          { "id": 2, "src": "assets/toquio2.jpg", "descricao": "Templo Senso-ji" }
-        ]
-      }
-    ]
-  };
+  "locais": [
+    {
+      "id": 1,
+      "nome": "Lisboa",
+      "descricao": "Lisboa é a capital de Portugal, famosa por sua história, arquitetura e cultura.",
+      "conteudo": "Lisboa é uma cidade vibrante, conhecida por seus bairros históricos, bondinhos clássicos e a culinária deliciosa.",
+      "pais": "Portugal",
+      "autor": "João Silva",
+      "destaque": true,
+      "data": "2025-03-30",
+      "imagem_pincipal": "img/Roma.jpeg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/torre_belem.jpg",
+          "descricao": "Torre de Belém, construção histórica à beira do Tejo."
+        },
+        {
+          "id": 2,
+          "src": "img/mosteiro_jeronimos.jpg",
+          "descricao": "Mosteiro dos Jerónimos, símbolo da era das descobertas."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Paris",
+      "descricao": "Paris, a Cidade Luz, é conhecida mundialmente por sua arte, moda e arquitetura.",
+      "conteudo": "Paris é o lar da icônica Torre Eiffel, museus renomados como o Louvre e a charmosa gastronomia francesa.",
+      "pais": "França",
+      "autor": "Maria Fernanda",
+      "destaque": true,
+      "data": "2025-03-28",
+      "imagem_pincipal": "img/paris.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/torre_eiffel.jpg",
+          "descricao": "A majestosa Torre Eiffel."
+        },
+        {
+          "id": 2,
+          "src": "img/notre_dame.jpg",
+          "descricao": "A histórica Catedral de Notre-Dame."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Cusco",
+      "descricao": "Cusco foi a capital do Império Inca e é o portal para Machu Picchu.",
+      "conteudo": "Com ruas de pedra, arquitetura colonial e sítios arqueológicos, Cusco é um destino cultural imperdível.",
+      "pais": "Peru",
+      "autor": "Carlos Andrade",
+      "destaque": false,
+      "data": "2025-03-25",
+      "imagem_pincipal": "img/cusco.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/sacsayhuaman.jpg",
+          "descricao": "Sacsayhuamán, fortaleza inca com blocos gigantes."
+        },
+        {
+          "id": 2,
+          "src": "img/qorikancha.jpg",
+          "descricao": "Qorikancha, antigo Templo do Sol em Cusco."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Istambul",
+      "descricao": "Istambul é a única cidade do mundo situada entre dois continentes: Europa e Ásia.",
+      "conteudo": "Conhecida por sua rica história, Istambul abriga mesquitas impressionantes, palácios e bazares vibrantes.",
+      "pais": "Turquia",
+      "autor": "Fatima Yildiz",
+      "destaque": false,
+      "data": "2025-03-22",
+      "imagem_pincipal": "img/istambul.jpg",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/mesquita_azul.jpg",
+          "descricao": "Mesquita Azul com seus azulejos e minaretes."
+        },
+        {
+          "id": 2,
+          "src": "img/santa_sofia.jpg",
+          "descricao": "Santa Sofia, símbolo da história bizantina e otomana."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Cidade do Cabo",
+      "descricao": "Cidade do Cabo é famosa por suas paisagens naturais e diversidade cultural.",
+      "conteudo": "Com a Table Mountain ao fundo e praias deslumbrantes, a cidade é um dos destinos mais visitados da África.",
+      "pais": "África do Sul",
+      "autor": "Nelson Mokoena",
+      "destaque": true,
+      "data": "2025-03-20",
+      "imagem_pincipal": "",
+      "imagens_complementares": [
+        {
+          "id": 1,
+          "src": "img/table_mountain.jpg",
+          "descricao": "Table Mountain, símbolo natural da cidade."
+        },
+        {
+          "id": 2,
+          "src": "img/cabo_esperanca.jpg",
+          "descricao": "Cabo da Boa Esperança, natureza exuberante no sul da África."
+        }
+      ]
+    }
+  ]
+};
   
-  function carregarCarrossel() {
-    const carouselInner = document.getElementById("carousel-inner");
-    const destaques = dados.destinos.filter(dest => dest.destaque);
-    destaques.forEach((destino, index) => {
-      const item = document.createElement("div");
-      item.className = `carousel-item${index === 0 ? " active" : ""}`;
-      item.innerHTML = `
-        <img src="${destino.imagem_principal}" class="d-block w-100" alt="${destino.nome}">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>${destino.nome}</h5>
-          <p>${destino.descricao}</p>
-        </div>
-      `;
-      item.addEventListener('click', () => {
-        window.location.href = `detalhes1.html?id=${destino.id}`;
-      });
-      carouselInner.appendChild(item);
-    });
-  }
   
-  function carregarCards() {
-    const container = document.getElementById("cards-destinos");
-    dados.destinos.forEach(destino => {
-      const col = document.createElement("div");
-      col.className = "col-md-4 mb-4";
-      col.innerHTML = `
-        <div class="card h-100" style="cursor:pointer">
-          <img src="${destino.imagem_principal}" class="card-img-top" alt="${destino.nome}">
-          <div class="card-body">
-            <h5 class="card-title">${destino.nome}</h5>
-            <p class="card-text">${destino.descricao}</p>
-          </div>
-        </div>
-      `;
-      col.querySelector(".card").addEventListener("click", () => {
-        window.location.href = `detalhes1.html?id=${destino.id}`;
-      });
-      container.appendChild(col);
-    });
-  }
-  
-  document.addEventListener("DOMContentLoaded", () => {
-    if (document.getElementById("carousel-inner")) carregarCarrossel();
-    if (document.getElementById("cards-destinos")) carregarCards();
-  });
   

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Locais Turísticos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .card-img-top {
+      object-fit: cover;
+      height: 200px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    section {
+      padding-top: 2rem;
+    }
+
+    .navbar-brand img {
+      
+      height: 60px;
+      width: auto;
+    }
+
+    #carrosselDestaques img {
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    nav {
+      background-color: #008CBA;
+      height: 80px;
+      min-height: 80px;
+      display: flex;
+      
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="assets/Logo.jpg" class="me-2"> 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Destinos.html">Destinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Sobre.html">Sobre</a>
+            </li>
+          </ul>
+        <form class="d-flex ms-lg-3 mt-2 mt-lg-0" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-light" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrossel -->
+  <div id="carrosselDestaques" class="carousel slide mt-3" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carrosselDestaques" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/lisboa.jpg" class="d-block w-100 rounded" alt="Lisboa">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Istambul.jpg" class="d-block w-100 rounded" alt="Istambul">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Cusco.jpg" class="d-block w-100 rounded" alt="Cusco">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Cidade do Cabo.jpg" class="d-block w-100 rounded" alt="Cidade do Cabo">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/Paris.jpeg" class="d-block w-100 rounded" alt="Paris">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrosselDestaques" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carrosselDestaques" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+
+  <!-- Cards -->
+  <main class="container my-5 flex-grow-1">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/assetscard/Cabo-da-Boa-Esperança.jpg" class="card-img-top" alt="Cabo da Boa Esperança">
+          <div class="card-body">
+            <h5 class="card-title">Cabo da Boa Esperança</h5>
+            <p class="card-text">Um dos pontos mais icônicos da África do Sul, com paisagens de tirar o fôlego.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/assetscard/MesquitaAzul.jpg" class="card-img-top" alt="Mesquita Azul">
+          <div class="card-body">
+            <h5 class="card-title">Mesquita Azul</h5>
+            <p class="card-text">Obra-prima da arquitetura otomana localizada em Istambul.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/assetscard/MosteiroDosJeronimos.jpg" class="card-img-top" alt="Mosteiro dos Jerónimos">
+          <div class="card-body">
+            <h5 class="card-title">Mosteiro dos Jerónimos</h5>
+            <p class="card-text">Patrimônio mundial em Lisboa, um exemplo de arte manuelina.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/assetscard/Notredame.jpg" class="card-img-top" alt="Catedral de Notre-Dame">
+          <div class="card-body">
+            <h5 class="card-title">Catedral de Notre-Dame</h5>
+            <p class="card-text">Majestosa catedral gótica localizada no coração de Paris.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/assetscard/Qorikancha.jpg" class="card-img-top" alt="Qorikancha">
+          <div class="card-body">
+            <h5 class="card-title">Qorikancha</h5>
+            <p class="card-text">Templo inca dedicado ao deus Sol, localizado em Cusco, Peru.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/assetscard/Sacsayhuaman.jpeg" class="card-img-top" alt="Sacsayhuamán">
+          <div class="card-body">
+            <h5 class="card-title">Sacsayhuamán</h5>
+            <p class="card-text">Fortaleza inca com pedras gigantescas perfeitamente encaixadas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/assetscard/SantaSofia.webp" class="card-img-top" alt="Santa Sofia">
+          <div class="card-body">
+            <h5 class="card-title">Santa Sofia</h5>
+            <p class="card-text">Construção histórica que já foi igreja, mesquita e museu em Istambul.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/assetscard/Table Mountain.jpeg" class="card-img-top" alt="Table Mountain">
+          <div class="card-body">
+            <h5 class="card-title">Table Mountain</h5>
+            <p class="card-text">Montanha com topo plano, símbolo da Cidade do Cabo, África do Sul.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="/assetscard/TorreEiffel.jpg" class="card-img-top" alt="Torre Eiffel">
+          <div class="card-body">
+            <h5 class="card-title">Torre Eiffel</h5>
+            <p class="card-text">Símbolo da França e uma das atrações mais visitadas do mundo.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Sobre o Desenvolvedor -->
+  <section class="container mt-5">
+    <h2>Sobre o Desenvolvedor</h2>
+    <p>Site criado por [Seu Nome Aqui], estudante de [Seu Curso] na [Sua Instituição].</p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer" style=" bottom: 0; left: 0; width: 100%; height: 100px; background-color: #343a40; color: white; display: flex; align-items: center; justify-content: center; z-index: 9999;">
+    <p class="mb-0">&copy; 2025 Turismo e viagens, seu Guia de Turismo. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

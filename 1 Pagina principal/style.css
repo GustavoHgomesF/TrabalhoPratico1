@@ -1,0 +1,45 @@
+/* style.css */
+
+/* Garantir imagens dos cards bem ajustadas */
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+  }
+  
+  /* Corpo com fonte básica e espaçamento natural */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Espaçamento para seção */
+  section {
+    padding-top: 2rem;
+  }
+  
+  /* Logo com borda arredondada */
+  .navbar-brand img {
+    border-radius: 5px;
+  }
+  #carrosselDestaques img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  nav {
+    background-color: #008CBA;
+    height: 80px;
+    min-height: 80px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens */
+  }
+  
+  /* Ajusta o tamanho da logo */
+  .navbar-brand img {
+    height: 60px;
+    width: auto;
+  }
