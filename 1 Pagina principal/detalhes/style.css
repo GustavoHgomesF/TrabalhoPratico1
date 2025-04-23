@@ -1,0 +1,55 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header sem cor de fundo */
+  header {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  /* Seções */
+  section {
+    padding: 1.5rem;
+  }
+  
+  .info-geral p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Galeria de fotos */
+  .fotos {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .foto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .navbar-brand img {
+      
+    height: 60px;
+    width: auto;
+  }
+  nav {
+    background-color: #008CBA;
+    height: 80px;
+    min-height: 80px;
+    display: flex;
+    
+  }
