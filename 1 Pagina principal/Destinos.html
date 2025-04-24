@@ -24,10 +24,9 @@
   height: 80px;
   min-height: 80px;
   display: flex;
-  align-items: center; /* Alinha verticalmente os itens */
+  align-items: center; 
 }
 
-/* Ajusta o tamanho da logo */
 .navbar-brand img {
   height: 60px;
   width: auto;
@@ -35,7 +34,7 @@
   </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
-  <!-- Navbar -->
+  
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
         <div class="navbar-brand d-flex align-items-center" >
@@ -65,56 +64,50 @@
     </div>
   </nav>
 
-  <!-- Conteúdo Principal -->
-  <main class="container my-5 flex-grow-1">
+    <main class="container my-5 flex-grow-1">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-      <!-- Gerados com base em locais turísticos diferentes -->
-      <!-- Exemplos de nomes genéricos e imagens -->
-      <!-- Substituir imagens com URLs reais se desejar -->
-
-      <!-- Repetição de blocos -->
-      <!-- Abaixo estão apenas 5 como exemplo -->
-      <!-- Substituir com os 20 locais desejados -->
+     
       <script>
         const destinos = [
-          "Petra",
-          "Grande Muralha da China",
-          "Chichén Itzá",
-          "Coliseu de Roma",
-          "Monte Fuji",
-          "Taj Mahal",
-          "Stonehenge",
-          "Palácio de Versalhes",
-          "Templo de Luxor",
-          "Monte Kilimanjaro",
-          "Cataratas do Iguaçu",
-          "Ilhas Maldivas",
-          "Parque Yellowstone",
-          "Angkor Wat",
-          "Castelo de Neuschwanstein",
-          "Parque Banff",
-          "Ayers Rock (Uluru)",
-          "Templo Kiyomizu-dera",
-          "Bora Bora",
-          "Plitvice Lakes"
+          { nome: "Petra", imagem: "assetsdestinos/Petra.jpg" },
+          { nome: "Grande Muralha da China", imagem: "assetsdestinos/Grande Muralha da China.jpg" },
+          { nome: "Chichén Itzá", imagem: "assetsdestinos/Chichén Itzá.jpg" },
+          { nome: "Coliseu de Roma", imagem: "assetsdestinos/Coliseu de Roma.avif" },
+          { nome: "Monte Fuji", imagem: "assetsdestinos/Monte Fuji.jpg" },
+          { nome: "Taj Mahal", imagem: "assetsdestinos/Taj Mahal.jpg" },
+          { nome: "Stonehenge", imagem: "assetsdestinos/Stonehenge.webp" },
+          { nome: "Palácio de Versalhes", imagem: "assetsdestinos/Palácio de Versalhes.webp" },
+          { nome: "Templo de Luxor", imagem: "assetsdestinos/Templo de Luxor.jpg" },
+          { nome: "Monte Kilimanjaro", imagem: "assetsdestinos/Monte Kilimanjaro.jpg" },
+          { nome: "Cataratas do Iguaçu", imagem: "assetsdestinos/Cataratas do Iguaçu.jpg" },
+          { nome: "Ilhas Maldivas", imagem: "assetsdestinos/Ilhas Maldivas.jpg" },
+          { nome: "Parque Yellowstone", imagem: "assetsdestinos/Parque Yellowstone.jpg" },
+          { nome: "Angkor Wat", imagem: "assetsdestinos/Angkor Wat.jpg" },
+          { nome: "Castelo de Neuschwanstein", imagem: "assetsdestinos/Castelo de Neuschwanstein.jpg" },
+          { nome: "Parque Banff", imagem: "assetsdestinos/Parque Banff.jpg" },
+          { nome: "Ayers Rock Uluru", imagem: "assetsdestinos/Ayers Rock Uluru.jpg" },
+          { nome: "Templo Kiyomizu-dera", imagem: "assetsdestinos/Templo Kiyomizu-dera.webp" },
+          { nome: "Bora Bora", imagem: "assetsdestinos/Bora Bora.jpg" },
+          { nome: "Plitvice Lakes", imagem: "assetsdestinos/Plitvice Lakes.jpg" },
+          { nome: "Grand Canyon", imagem: "assetsdestinos/Grand Canyon.jpg" }
         ];
-
+      
         const container = document.currentScript.parentElement;
         destinos.forEach(destino => {
           const col = document.createElement('div');
           col.className = 'col';
-
+      
           const card = document.createElement('div');
           card.className = 'card h-100 shadow-sm';
           card.innerHTML = `
-            <img src="https://via.placeholder.com/400x200?text=${encodeURIComponent(destino)}" class="card-img-top" alt="${destino}">
+            <img src="${destino.imagem}" class="card-img-top" alt="${destino.nome}">
             <div class="card-body">
-              <h5 class="card-title">${destino}</h5>
-              <p class="card-text">Explore o famoso destino de ${destino}, repleto de belezas e histórias fascinantes.</p>
+              <h5 class="card-title">${destino.nome}</h5>
+              <p class="card-text">Explore o famoso destino de ${destino.nome}, repleto de belezas e histórias fascinantes.</p>
             </div>
           `;
-
+      
           col.appendChild(card);
           container.appendChild(col);
         });
